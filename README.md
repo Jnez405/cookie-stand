@@ -7,7 +7,7 @@ Pat's Salmon Cookies webpage is an online presence for a unique confectionery bu
 * [submission PR](https://github.com/Jnez405/cookie-stand/tree/clss06-Basics)
 
 ### Lighthouse Accessibility Report Score
-## Class-06
+## Class-07
 
 * ![Home Page](https://raw.githubusercontent.com/Jnez405/cookie-stand/main/img/Screenshot%202024-06-04%20214927.png)
 
