@@ -1,6 +1,6 @@
 # cookie-stand
 
-Pat's Salmon Cookies webpage is an online presence for a unique confectionery business that offers cookies shaped like salmon, designed for both humans and salmon to enjoy. It includes a stylish homepage with business information and a dynamic sales data page that calculates and displays daily cookie production needs for various locations.
+Barebones website for Pat's Salmon Cookies
 
 ### Links and Resources
 
