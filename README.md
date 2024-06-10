@@ -4,7 +4,7 @@ Pat's Salmon Cookies webpage is an online presence for a unique confectionery bu
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Jnez405/cookie-stand/tree/clss06-SData)
+* [submission PR](https://github.com/Jnez405/cookie-stand/tree/class06-SData)
 
 ### Lighthouse Accessibility Report Score
 ## Class-06
