@@ -1,0 +1,63 @@
+.img-container{
+  text-align: center;
+}
+
+body {
+  font-family: Georgia, Times, serif;
+  background-color: #FFAF87;
+  color: #000000;
+}
+h2, h3 {
+  font-family: 'Righteous', sans-serif;
+  color: #502F4C;
+}
+h1 {
+  font-family: 'Righteous', sans-serif;
+  font-style: italic;
+  letter-spacing: 5px;
+  color: #502F4C;
+}
+h3{
+  font-size: 40px;
+  margin-bottom: auto;
+
+}
+
+header {
+  background-color: #FF8E72;
+  padding: 20px 0;
+  text-align: center;
+}
+nav {
+  background-color: #ED6A5E;
+  text-align: left;
+  padding: 20px;
+}
+nav a {
+  color: #502F4C;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+main {
+  margin-left: 20px;
+}
+footer {
+  background-color: #ED6A5E;
+  color: #000000;
+  padding: 20px; 
+  text-align: center;
+}
+section p {
+      text-indent: 20px;
+      padding: .2px;
+}
+
+
+/* 
+#ED6A5E - Deep Salmon
+#FF8E72 - Mid Salmon
+#FFAF87 - light Salmon
+#502F4C - Purp
+#000000 - Salmon
+*/

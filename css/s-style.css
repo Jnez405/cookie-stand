@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #757575;
+  text-align: left;
+}
+
+.sales-table th, .staff-table th {
+  background-color: #FA8072;
+}
+
+.sales-table {
+  margin-top: 20px;
+}
+
+.staff-table {
+  margin-top: 40px;
+}
+
+.staff-table th, .staff-table td {
+  text-align: center;
+}
