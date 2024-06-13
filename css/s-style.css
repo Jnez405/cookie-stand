@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.6;
+  background-color: #FFAF87;
 }
 
 table {
@@ -11,12 +12,12 @@ table {
 
 th, td {
   padding: 10px;
-  border: 1px solid #757575;
+  border: 1px solid #502F4C;
   text-align: left;
 }
 
 .sales-table th, .staff-table th {
-  background-color: #FA8072;
+  background-color: #FF8E72;
 }
 
 .sales-table {
@@ -30,3 +31,11 @@ th, td {
 .staff-table th, .staff-table td {
   text-align: center;
 }
+
+/* 
+#ED6A5E - Deep Salmon
+#FF8E72 - Mid Salmon
+#FFAF87 - light Salmon
+#502F4C - Purp
+#000000 - Salmon
+*/

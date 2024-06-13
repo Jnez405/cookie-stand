@@ -3,9 +3,9 @@
 }
 
 body {
-  font-family: Georgia, Times, serif;
+  font-family: 'Righteous', sans-serif;
   background-color: #FFAF87;
-  color: #000000;
+  color: #502F4C;
 }
 h2, h3 {
   font-family: 'Righteous', sans-serif;
@@ -13,8 +13,8 @@ h2, h3 {
 }
 h1 {
   font-family: 'Righteous', sans-serif;
-  font-style: italic;
-  letter-spacing: 5px;
+  font-style: bold;
+  letter-spacing: 1px;
   color: #502F4C;
 }
 h3{
@@ -23,11 +23,26 @@ h3{
 
 }
 
-header {
+.header {
   background-color: #FF8E72;
   padding: 20px 0;
   text-align: center;
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden; /* Ensure no overflow */
 }
+
+.header-image {
+  width: 100%; /* Make the image span the full width of the header */
+  height: 100%; /* Make the image span the full height of the header */
+  object-fit: contain; /* Contain the image within the header */
+  z-index: 0;
+  opacity: 0.8; /* Adjust opacity as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 nav {
   background-color: #ED6A5E;
   text-align: left;
@@ -44,7 +59,7 @@ main {
 }
 footer {
   background-color: #ED6A5E;
-  color: #000000;
+  color: #502F4C;
   padding: 20px; 
   text-align: center;
 }
@@ -53,6 +68,21 @@ section p {
       padding: .2px;
 }
 
+/* Background Image with Opacity */
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115%;
+  background-image: url('/img/SalmonCookie.png'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  opacity: 0.3; /* Adjust opacity */
+  z-index: -1; /* Ensure the background is behind the content */
+}
 
 /* 
 #ED6A5E - Deep Salmon
