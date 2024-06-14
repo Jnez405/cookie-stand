@@ -71,7 +71,7 @@ section p {
 
 /* Background Image with Opacity */
 body {
-  background-image: url('./bgsalmon.png');
+  background-image: url('./img/bgsalmon.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
