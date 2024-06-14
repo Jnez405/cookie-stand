@@ -1,3 +1,4 @@
+
 .img-container{
   text-align: center;
 }
@@ -69,21 +70,12 @@ section p {
 }
 
 /* Background Image with Opacity */
-.background-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 115%;
-  background-image: url('/img/SalmonCookie.png'); /* Replace with your image path */
-  background-size: cover; /* Cover the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  opacity: 0.3; /* Adjust opacity */
-  z-index: -1; /* Ensure the background is behind the content */
+body {
+  background-image: url('/img/SalmonCookie.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-
 /* 
 #ED6A5E - Deep Salmon
 #FF8E72 - Mid Salmon
