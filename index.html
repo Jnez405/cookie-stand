@@ -7,43 +7,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/i-style.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
-    <body style="background: url('img/bgsalmon.png') no-repeat center center fixed; background-size: cover;">
     <header class="header">
-        <img src="img/SalmonHeader.png" alt="Header Image" class="header-image">
+        <div class="logo-container">
+            <img src="/img/SalmonHeader.png" alt="Logo" class="logo-image">
+        </div>
+        <div class="hero-container">
+            <!-- Images will be added here dynamically -->
+        </div>
+        <button id="theme-toggle" class="button">Toggle Light/Dark Mode</button>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="sales.html">Sales Data</a>
-      </nav>
+        <a href="store.html">Order Form</a>
+        <a href="style-guide.html">Style Guide</a>
+        <a href="order-processing.html">Order Process</a>
+    </nav>
     <main>
-        </div>
-        <section class="background-section">
-            <h3>Seattle</h3>
-            <p>Hours Open : 6am-7pm</p>
-            <p>Contact Info : 123-456-7890</p>
-            <p>Location : 2901 3rd Ave #300, Seattle, WA 98121</p>
-            <h3>Tokyo</h3>
-            <p>Hours Open : 6am-7pm</p>
-            <p>Contact Info: 222-222-2222</p>
-            <p>Location: 1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-8634</p>
-            <h3>Dubai</h3>
-            <p>Hours Open : 6am-7pm</p>
-            <p>Contact Info : 333-333-3333</p>
-            <p>Location : 1 Sheikh Mohammed bin Rashid Blvd - Dubai</p>
-            <h3>Paris</h3>
-            <p>Hours Open : 6am-7pm</p>
-            <p>Contact Info : 444-444-4444</p>
-            <p>Location : Champ de Mars, 5 Avenue Anatole France, 75007 Paris</p>
-            <h3>Lima</h3>
-            <p>Hours Open : 6am-7pm</p>
-            <p>Contact Info : 555-555-5555</p>
-            <p>Location : Ca. Gral. Borgoño cuadra 8, Miraflores 15074</p>
+        <section id="locations-info">
+            <h2>Our Locations</h2>
+            <!-- Location info will be dynamically added here -->
         </section>
     </main>
-<footer>
-   <p>© 2023 Pat's Salmon Cookies</p> 
-</footer>
-</body>
+    <footer>
+        <p>© 2024 Pat's Salmon Cookies</p> 
+     </footer>
 </html>

@@ -1,7 +1,63 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Righteous', sans-serif;
   line-height: 1.6;
   background-color: #FFAF87;
+  color: #502F4C;
+}
+
+body::before {
+  content: '';
+  background: url('/img/bgsalmon.png') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5; 
+}
+
+.header {
+  background-color: #FF8E72; 
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  height: 150px; 
+  width: auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Righteous', sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em; 
+  font-style: bold;
+  letter-spacing: 1px;
+  color: #502F4C;
+}
+
+h2 {
+  font-size: 2em; 
+  color: #502F4C;
+}
+
+h3 {
+  font-size: 1.75em; 
+  color: #502F4C;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 table {
@@ -32,10 +88,124 @@ th, td {
   text-align: center;
 }
 
-/* 
-#ED6A5E - Deep Salmon
-#FF8E72 - Mid Salmon
-#FFAF87 - light Salmon
-#502F4C - Purp
-#000000 - Salmon
-*/
+footer {
+  background-color: #ED6A5E;
+  color: #502F4C;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Colors list */
+.color-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.color-list li {
+  margin-bottom: 10px;
+}
+
+.color-list span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Button styles */
+.button {
+  padding: 10px 20px;
+  background-color: #ED6A5E;
+  color: #FFFFFF;
+  border: none;
+  font-family: 'Righteous', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #FFAF87;
+  color: #502F4C;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #ED6A5E;
+  text-align: left;
+  padding: 20px;
+}
+
+nav a {
+  color: #502F4C;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #FFAF87;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+}
+
+body.dark-mode::before {
+  filter: grayscale(100%);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+  color: #E0E0E0;
+}
+
+body.dark-mode .header {
+  background-color: #444444;
+}
+
+body.dark-mode .logo-image,
+body.dark-mode .hero-container img,
+body.dark-mode img {
+  filter: grayscale(100%);
+}
+
+body.dark-mode nav {
+  background-color: #333333;
+}
+
+body.dark-mode nav a {
+  color: #E0E0E0;
+}
+
+body.dark-mode footer {
+  background-color: #333333;
+  color: #E0E0E0;
+}
+
+body.dark-mode section p {
+  color: #E0E0E0;
+}
+
+/* Dark mode styles for button */
+body.dark-mode .button {
+  background-color: #333333;
+  color: #E0E0E0;
+}
+
+body.dark-mode .button:hover {
+  background-color: #E0E0E0;
+  color: #000000;
+}
+
+/* Location Info Styles */
+.location {
+  background-color: #fff;
+  border: 1px solid #502F4C;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.location h3 {
+  margin-top: 0;
+}
