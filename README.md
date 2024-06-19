@@ -13,6 +13,6 @@ Pat's Salmon Cookies webpage is an online presence for a unique confectionery bu
 
 ![Sales Page](https://raw.githubusercontent.com/Jnez405/cookie-stand/main/img/class8b-ss.png)
 
-getting the images exactly how I want them was a bit of a challenge but manage to get it to where I need it. overall I like the colors and the logos for the webpage.
+I updated the look of the sales data page and, while going back and editing the array of location objects was a bit intimidating, thankfully, it was not as bad as I thought. Overall, I made a lot of progress and the website looks a bit like a real website.
 
 ### Author: Jesus O.
