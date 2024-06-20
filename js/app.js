@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000); // Change image every 3 seconds
   }
 
-  // Define locations
   const locations = [
     { name: 'Seattle', address: '2901 3rd Ave #300, Seattle, WA 98121', hours: '6am-7pm', contact: '123-456-7890', minCust: 23, maxCust: 65, avgCookies: 6.3 },
     { name: 'Tokyo', address: '1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-8634', hours: '6am-7pm', contact: '222-222-2222', minCust: 3, maxCust: 24, avgCookies: 1.2 },
@@ -57,6 +56,26 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Paris', address: 'Champ de Mars, 5 Avenue Anatole France, 75007 Paris', hours: '6am-7pm', contact: '444-444-4444', minCust: 20, maxCust: 38, avgCookies: 2.3 },
     { name: 'Lima', address: 'Ca. Gral. Borgoño cuadra 8, Miraflores 15074', hours: '6am-7pm', contact: '555-555-5555', minCust: 2, maxCust: 16, avgCookies: 4.6 }
   ];
+
+  // Handle form submission
+  const cookieStandForm = document.getElementById('cookie-stand-form');
+  if (cookieStandForm) {
+    cookieStandForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(cookieStandForm);
+      const newLocation = {
+        name: formData.get('location-name'),
+        minCust: parseInt(formData.get('min-customers')),
+        maxCust: parseInt(formData.get('max-customers')),
+        avgCookies: parseFloat(formData.get('avg-cookies'))
+      };
+
+      locations.push(newLocation);
+      addLocationToTable(newLocation);
+      updateFooterRow();
+    });
+  }
 
   function renderSalesData() {
     const salesDataContainer = document.getElementById('sales-data');
@@ -80,6 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
     table.appendChild(tableHead);
 
     const tableBody = document.createElement('tbody');
+    tableBody.id = 'sales-table-body';
+
     const hourlyTotals = new Array(14).fill(0);
 
     locations.forEach(location => {
@@ -104,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const tableFoot = document.createElement('tfoot');
     const footerRow = document.createElement('tr');
+    footerRow.id = 'sales-table-footer';
     footerRow.innerHTML = '<th>Totals</th>';
     hourlyTotals.forEach(total => {
       footerRow.innerHTML += `<td>${total}</td>`;
@@ -113,6 +135,54 @@ document.addEventListener('DOMContentLoaded', () => {
     table.appendChild(tableFoot);
 
     salesDataContainer.appendChild(table);
+  }
+
+  function addLocationToTable(location) {
+    const tableBody = document.getElementById('sales-table-body');
+    if (!tableBody) {
+      console.error('Sales table body not found');
+      return;
+    }
+
+    const row = document.createElement('tr');
+    let dailyTotal = 0;
+
+    row.innerHTML = `<td>${location.name}</td>`;
+
+    for (let hour = 0; hour < 14; hour++) {
+      const customers = Math.floor(Math.random() * (location.maxCust - location.minCust + 1)) + location.minCust;
+      const cookies = Math.round(customers * location.avgCookies);
+      dailyTotal += cookies;
+      row.innerHTML += `<td>${cookies}</td>`;
+    }
+
+    row.innerHTML += `<td>${dailyTotal}</td>`;
+    tableBody.appendChild(row);
+  }
+
+  function updateFooterRow() {
+    const footerRow = document.getElementById('sales-table-footer');
+    if (!footerRow) {
+      console.error('Sales table footer not found');
+      return;
+    }
+
+    const hourlyTotals = new Array(14).fill(0);
+    const tableBody = document.getElementById('sales-table-body');
+    const rows = tableBody.getElementsByTagName('tr');
+
+    for (let row of rows) {
+      const cells = row.getElementsByTagName('td');
+      for (let i = 1; i <= 14; i++) {
+        hourlyTotals[i - 1] += parseInt(cells[i].textContent);
+      }
+    }
+
+    footerRow.innerHTML = '<th>Totals</th>';
+    hourlyTotals.forEach(total => {
+      footerRow.innerHTML += `<td>${total}</td>`;
+    });
+    footerRow.innerHTML += `<td>${hourlyTotals.reduce((sum, total) => sum + total, 0)}</td>`;
   }
 
   function renderLocationInfo() {
@@ -145,4 +215,3 @@ document.addEventListener('DOMContentLoaded', () => {
     renderLocationInfo();
   }
 });
-
