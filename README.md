@@ -4,15 +4,15 @@ Pat's Salmon Cookies webpage is an online presence for a unique confectionery bu
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Jnez405/cookie-stand/tree/class07-TablesNStyle)
+* [submission PR](https://github.com/Jnez405/cookie-stand/tree/class-9-form)
 
 ### Lighthouse Accessibility Report Score
-## Class-07 - Lab: Salmon Cookies Pt. 2
+## Class-09 - Lab: Form Addition 
 
 ![Home Page](https://raw.githubusercontent.com/Jnez405/cookie-stand/main/img/Screenshot-2024-06-12-210156.png)
 
-![Sales Page](https://raw.githubusercontent.com/Jnez405/cookie-stand/main/img/Screenshot-2024-06-12-210512.png)
+![Sales Page](https://raw.githubusercontent.com/Jnez405/cookie-stand/main/img/class9-ss.png)
 
-getting the images exactly how I want them was a bit of a challenge but manage to get it to where I need it. overall I like the colors and the logos for the webpage.
+Had trouble with my OG sales data table deleting with the new form addition, fixed it by sticking with the DRY principles. 
 
 ### Author: Jesus O.
