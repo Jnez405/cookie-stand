@@ -7,7 +7,7 @@ body {
 
 body::before {
   content: '';
-  background: url('./img/bg-salmon.png') no-repeat center center fixed;
+  background: url('../img/bg-salmon.png') no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   top: 0;
