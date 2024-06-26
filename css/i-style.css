@@ -1,5 +1,3 @@
-/* Existing styles */
-
 .img-container {
   text-align: center;
 }
@@ -12,7 +10,7 @@ body {
 
 body::before {
   content: '';
-  background: url('/img/bg-salmon.png') no-repeat center center fixed;
+  background: url('./img/bg-salmon.png') no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -20,7 +18,7 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.5; /* Adjust opacity if needed */
+  opacity: 0.5;
 }
 
 h2, h3 {
